@@ -18,7 +18,7 @@ func getCaptcha(v []int) string {
 	if mode == 1 {
 		s += strconv.Itoa(num) + " " + ope[operation-1] + " " + data[str-1]
 	} else {
-		s += data[str-1] + " " + ope[operation-1] + " " + strconv.Itoa(num)
+		s += data[num-1] + " " + ope[operation-1] + " " + strconv.Itoa(str)
 	}
 
 	return s

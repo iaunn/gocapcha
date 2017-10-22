@@ -9,7 +9,7 @@ func TestCaptcha(t *testing.T) {
 
 	rs := getCaptcha(c)
 
-	if rs != "1 + one" {
+	if rs != "1+one" {
 		t.Error("it should be 1 + one")
 	}
 
